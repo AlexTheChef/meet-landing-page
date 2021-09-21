@@ -467,3 +467,36 @@ body {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 767px) {
+    html {
+        width: 375px;
+        height: 2215px;
+    }
+    body {
+        width: 375px;
+        height: 2215px;
+    }
+    .section1 {
+        width: 375px;
+        height: 130px;
+    }
+
+    .section2__tablet {
+        left: -20px;
+        width: 414px;
+        height: auto;
+    }
+
+    .section2 {
+        width: 375px;
+        height: 350px;
+        top: 331px;
+    }
+
+    .section2__body {
+        width: 375px;
+        height: 300px;
+        margin-top: 0px;
+    }
+}
