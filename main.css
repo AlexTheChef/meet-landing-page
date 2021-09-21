@@ -29,6 +29,10 @@ body {
     align-items: center;
 }
 
+.section2__tablet {
+    display: none;
+}
+
 .section2__imgleft {
     position: absolute;
     left: -32px;
@@ -359,7 +363,107 @@ body {
 }
 
 @media screen and (max-width: 1439px) {
-    body {
-      background-color: lightgreen;
+    html {
+        width: 768px;
+        height: 2128px;
     }
-  }
+    body {
+        width: 768px;
+        height: 2128px;
+    }
+    .section1 {
+        width: 768px;
+        height: 140px;
+    }
+    .section2__tablet {
+        display: flex;
+        position: absolute;
+        left: -26px;
+    }
+    .section2__imgleft {
+        display: none;
+    }
+    .section2__imgright {
+        display: none;
+    }
+    .section2 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+        height: 358px;
+        top: 443px;
+    }
+    .section2__body {
+        width: 457px;
+        height: 262px;
+    }
+    .section2__head {
+        width: 339px;
+        height: 96px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .section2__p {
+        width: 457px;
+        height: 52px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .section3 {
+        top: 857px;
+        width: 768px;
+    }
+    .section4 {
+        width: 768px;
+        top: 1064px;
+        height: 156px;
+    }
+    .section4__container {
+        height: 156px;
+        width: 689px;
+    }
+    .section4__container img {
+        height: 156px;
+        border-radius: 8px;
+    }
+    .section5 {
+        top: 1268px;
+        width: 768px;
+    }
+    .section5__p {
+        font-size: 16px;
+        width: 573px;
+    }
+    .section6 {
+        top: 1588px;
+        width: 768px;
+    }
+    .section7 {
+        top: 1700px;
+        width: 768px;
+        height: 428px;
+        background-image: url(/pictures/tablet/image-footer.jpg);
+    box-shadow: inset 0 0 0 300px rgba(77, 150, 169, 0.85);
+    }
+
+    .section7__container {
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 768px;
+        height: 315px;
+    }
+
+    .section7__h1 {
+        width: 457px;
+        text-align: center;
+    }
+
+    .section7__p {
+        width: 573px;
+        height: 52px;
+        text-align: center;
+    }
+}
