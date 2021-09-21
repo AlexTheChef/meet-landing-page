@@ -1,7 +1,10 @@
 html {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 1895px;
     background: #FAFAFA;
     font-family: 'Red Hat Display', sans-serif;
@@ -11,22 +14,27 @@ html {
 }
 
 body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 1895px;
     background: #FAFAFA;
     overflow-x: hidden;
 }
 
 .section1 {
+    position:absolute;
     width: 1440px;
     height: 169px;
     display: flex;
     justify-content: center;
     align-items: center;
+    top:0px;
 }
 
 .section2__tablet {
@@ -36,13 +44,13 @@ body {
 .section2__imgleft {
     position: absolute;
     left: -32px;
-    top: 169px;
+    top: 0px;
 }
 
 .section2__imgright {
     position: absolute;
     right: -32px;
-    top: 224px;
+    top: 55px;
 }
 
 .section2 {
@@ -53,6 +61,7 @@ body {
     width: 1440px;
     height: 358px;
     top: 169px;
+    position: absolute;
 }
 
 .section2__body {
@@ -362,14 +371,20 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1200px) {
     html {
-        width: 768px;
+        width: 100%;
         height: 2128px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
     body {
-        width: 768px;
+        width: 100%;
         height: 2128px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
     .section1 {
         width: 768px;
@@ -378,7 +393,7 @@ body {
     .section2__tablet {
         display: flex;
         position: absolute;
-        left: -26px;
+        top:140px;
     }
     .section2__imgleft {
         display: none;
